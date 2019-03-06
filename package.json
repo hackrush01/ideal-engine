@@ -1,7 +1,7 @@
 {
-  "name": "git-fetch",
+  "name": "ideal-engine",
   "version": "1.0.0",
-  "description": "For fetching git data",
+  "description": "Ideal Engine is a desktop application to monitor github contributions, given handles.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -9,9 +9,25 @@
   "author": "Amit Ankit Utkarsh Vivek",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.0.5"
+    "electron": "^4.0.7"
   },
   "dependencies": {
+    "bower": "^1.8.8",
     "jquery": "^3.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackrush01/ideal-engine.git"
+  },
+  "keywords": [
+    "git",
+    "collective",
+    "commit",
+    "fetch",
+    "report"
+  ],
+  "bugs": {
+    "url": "https://github.com/hackrush01/ideal-engine/issues"
+  },
+  "homepage": "https://github.com/hackrush01/ideal-engine#readme"
 }
