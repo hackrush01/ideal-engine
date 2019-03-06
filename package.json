@@ -1,0 +1,17 @@
+{
+  "name": "git-fetch",
+  "version": "1.0.0",
+  "description": "For fetching git data",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Amit Ankit Utkarsh Vivek",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.5"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
