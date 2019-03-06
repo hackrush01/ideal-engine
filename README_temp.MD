@@ -12,7 +12,7 @@ Ideal Engine is a desktop application to monitor github contributions, given han
 
 ### Prerequisites
 1. git
-2. nodejs(install using `sudo apt update && sudo apt install nodejs`
+2. nodejs(install using `sudo apt update && sudo apt install nodejs`)
 
 ### Steps to setup
 1. Clone the repo `git clone https://github.com/hackrush01/ideal-engine.git`
@@ -30,4 +30,3 @@ Run the app using `npm start`
 2. [Ankit Agarwal](https://github.com/)
 3. [Utkarsh Shukla](https://github.com/)
 4. [Vivek Modi](https://github.com/modihere)
-
