@@ -42,7 +42,7 @@ function do_upload(file){
     reader.readAsText(fileUpload.files[0]);
     
     reader.onload = (e) => {
-        var rows = e.target.result.split("\r\n");
+        var rows = e.target.result.split(/\r?\n/);
         var groups = {};
 
         if (rows.length < 1) {
@@ -56,6 +56,7 @@ function do_upload(file){
             const cells = rows[i].split(",");
           if(cells[0] == "") continue
             const group_number = cells[3];
+            console.log(group_number)
             const student_detail = {name: cells[0], gh_handle: cells[1], repository: cells[2]};
 
             if (group_number in groups){
@@ -89,7 +90,7 @@ $('#del-from-list').on('click', () => {
 	// })
   console.log("file deleted")
     sno=0
-    $('#contact-table tr').remove()
+    $('#contact-table td').remove()
     localStorage.clear();
 	//loadAndDisplayContacts()
 })
@@ -105,8 +106,8 @@ function addEntry(gr_name, email) {
       // $('#contact-table').append(updateString)
       const table = document.getElementById('contact-table')
       const arr = [gr_name,email]
-      //console.log(name,email)
-      //console.log(gr_name)
+      console.log(email)
+      console.log(gr_name)
       table.innerHTML += "<tr>" + 
                    "<td>" + sno + "</td>" +
                    "<td>" + gr_name + "</td>" +
