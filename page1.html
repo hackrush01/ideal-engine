@@ -1,19 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Home</title>
+	<title>Git-Fetch</title>
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+  <link rel = "stylesheet" 
+  href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="mycss.css">
 </head>
 
 <body>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <input type="file" name="fileupload"/>
+  <input type="file" name="fileUpload" id="fileUpload"/>
   <br>
-  <button>Upload CSV</button>
-  <br><br>
-  <button>Clear</button>
+  <button class = "btn btn-primary" id = "add-to-list-from-csv">Upload CSV</button>
+  <br>
+  <button class = "btn btn-primary" id = "take-from-list-all">See All</button>
+  <br>
+  <button class = "btn btn-primary" id = "del-from-list">Clear</button>
 
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -27,41 +32,18 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<h1>Welcome!</h1>
-<table class="table-fill">
+<h1>Welcome to Git-Fetch!</h1>
+<table class="table-fill" id="contact-table">
 <thead>
 <tr>
 <th class="text-left">Group Number</th>
 <th class="text-left">No.of Commits</th>
-<th class="text-left">Last Commit</th>
+<th class="text-left">Remarks</th>
 </tr>
 </thead>
 <tbody class="table-hover">
-<tr>
-<td class="text-left">1</td>
-<td class="text-left">5</td>
-<td class="text-left">21.01.19 , 9:00PM</td>
-</tr>
-<tr>
-<td class="text-left">1</td>
-<td class="text-left">5</td>
-<td class="text-left">21.01.19 , 9:00PM</td>
-</tr>
-<tr>
-<td class="text-left">1</td>
-<td class="text-left">5</td>
-<td class="text-left">21.01.19 , 9:00PM</td>
-</tr>
-<tr>
-<td class="text-left">1</td>
-<td class="text-left">5</td>
-<td class="text-left">21.01.19 , 9:00PM</td>
-</tr>
-<tr>
-<td class="text-left">1</td>
-<td class="text-left">5</td>
-<td class="text-left">21.01.19 , 9:00PM</td>
-</tr>
 </tbody>
 </table>
- </body>
+<script src = "./view.js" ></script>
+</body>
+</html>

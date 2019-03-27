@@ -57,7 +57,7 @@ function do_upload(file){
           if(cells[0] == "") continue
             const group_number = cells[3];
             console.log(group_number)
-            const student_detail = {name: cells[0], gh_handle: cells[1], repository: cells[2]};
+            const student_detail = {full_name: cells[0], gh_handle: cells[1], repository: cells[2]};
 
             if (group_number in groups){
                 groups[group_number].push(student_detail)
@@ -119,7 +119,6 @@ function addEntry(gr_name, email) {
 //name = "+arr+"
 function clickit(name)
 {
-	document.getElementById('take-from-list').style.color = "red"
 	//console.log(name)
 	ipcRenderer.send('show-popup', name)
 }

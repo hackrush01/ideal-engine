@@ -8,11 +8,11 @@ let all_newwin
 
 function createWindow()
 {
-	win = new BrowserWindow({width: 800, height: 600})
+	win = new BrowserWindow({width: 1024, height: 768})
 	//win.loadFile('index.html')
 	//win.webContents.openDevTools()
 	win.loadURL(url.format ({
-		pathname: path.join(__dirname, 'index.html'),
+		pathname: path.join(__dirname, 'page1.html'),
 		protocol: 'file:',
 		slashes: true
 	}))
@@ -24,10 +24,10 @@ function createWindow()
 	{
 		if(!newwin)
 		{
-			newwin = new BrowserWindow({width: 400, height: 400, parent: win})
+			newwin = new BrowserWindow({width: 800, height: 600, parent: win})
 			//newwin.webContents.openDevTools()
 			newwin.loadURL(url.format({
-				pathname: path.join(__dirname,'popup.html'),
+				pathname: path.join(__dirname,'page2.html'),
 				protocol: 'file',
 				slashes: true
 		}))
@@ -47,10 +47,10 @@ function createWindow()
 	{
 		if(!all_newwin)
 		{
-			all_newwin = new BrowserWindow({width: 400, height: 400, parent: win})
+			all_newwin = new BrowserWindow({width: 800, height: 600, parent: win})
 			//all_newwin.webContents.openDevTools()
 			all_newwin.loadURL(url.format({
-				pathname: path.join(__dirname,'popup_all.html'),
+				pathname: path.join(__dirname,'page2_all.html'),
 				protocol: 'file',
 				slashes: true
 		}))
