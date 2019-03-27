@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Home</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <input type="file" name="fileupload"/>
+  <br>
+  <button>Upload CSV</button>
+  <br><br>
+  <button>Clear</button>
+
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<h1>Welcome!</h1>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Group Number</th>
+<th class="text-left">No.of Commits</th>
+<th class="text-left">Last Commit</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">1</td>
+<td class="text-left">5</td>
+<td class="text-left">21.01.19 , 9:00PM</td>
+</tr>
+<tr>
+<td class="text-left">1</td>
+<td class="text-left">5</td>
+<td class="text-left">21.01.19 , 9:00PM</td>
+</tr>
+<tr>
+<td class="text-left">1</td>
+<td class="text-left">5</td>
+<td class="text-left">21.01.19 , 9:00PM</td>
+</tr>
+<tr>
+<td class="text-left">1</td>
+<td class="text-left">5</td>
+<td class="text-left">21.01.19 , 9:00PM</td>
+</tr>
+<tr>
+<td class="text-left">1</td>
+<td class="text-left">5</td>
+<td class="text-left">21.01.19 , 9:00PM</td>
+</tr>
+</tbody>
+</table>
+ </body>
