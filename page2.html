@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>Group Details</title>
+   <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+   <link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+
+<body>
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <input type="file" name="fileupload"/>
+  <br>
+  <button>Upload CSV</button>
+  <br><br>
+  <button>Clear</button>
+   </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<h1>Group Details</h1>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Name</th>
+<th class="text-left">Handle</th>
+<th class="text-left">Repository</th>
+<th class="text-left">No. of Commits</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Ankit Agarwal</td>
+<td class="text-left">agarwalankit096</td>
+<td class="text-left">hackrush01/ideal-engine</td>
+<td class="text-left">3</td>
+</tbody>
+</table>
+ </body>
