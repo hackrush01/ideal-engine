@@ -1,11 +1,13 @@
 const { ipcRenderer } = require('electron')
 //const names = ["hackrush01"]
 let $ = require('jquery')
+var fs = require('fs');
+const auth_token = fs.readFileSync('auth_token', 'utf8');
 // let handle
 // let repo
 
 async function fetch_data_for_single_user(handle,repo,fullname){
-    str = "https://api.github.com/users/" + handle + "/events?per_page=100"
+    str = "https://api.github.com/users/" + handle + "/events?per_page=100&access_token=" + auth_token
     console.log(str)
     const response = await fetch(str);
     const myJson = await response.json();
