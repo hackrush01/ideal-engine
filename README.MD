@@ -23,7 +23,8 @@ Ideal Engine is a desktop application to monitor github contributions, given han
 
 ### Application of Auth Token 
 1. Create a authentication token for your profile on www.github.com
-2. Paste the token in the auth_token file present in the directory.
+2. Create a file named "auth_token" in the main directory of the project.
+2. Paste the Auth token in the file created above.
 
 ### Running the app
 Run the app using `npm start`
