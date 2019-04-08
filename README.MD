@@ -21,6 +21,10 @@ Ideal Engine is a desktop application to monitor github contributions, given han
 4. run `sudo npm install -g bower`
 5. `bower install bootstrap`
 
+### Application of Auth Token 
+1. Create a authentication token for your profile on www.github.com
+2. Paste the token in the auth_token file present in the directory.
+
 ### Running the app
 Run the app using `npm start`
 
